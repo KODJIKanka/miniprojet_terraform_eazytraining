@@ -81,3 +81,17 @@ L'objectif est de déployer une instance EC2 Ubuntu avec un volume EBS, une IP p
 - Le projet respecte la modularité en séparant chaque composant AWS dans un module dédié.
 - Le script `app/files/install.sh` installe NGINX automatiquement sur l'instance après le provisioning.
 - La capture de l'accès NGINX est disponible dans `nginx_terraform.png`.
+
+---
+
+## 👤 Auteur
+
+**KODJI Kanka**  
+Formation DevOps — [EazyTraining](https://eazytraining.fr)  
+GitHub : [KODJIKanka](https://github.com/KODJIKanka)
+
+---
+
+## 📄 Licence
+
+Ce projet est réalisé dans le cadre d'une formation DevOps avec EazyTraining.
