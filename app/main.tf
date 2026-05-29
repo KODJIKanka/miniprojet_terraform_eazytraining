@@ -21,8 +21,8 @@ module "ec2" {
   tag_name            = "eazytraining_ec2"
   security_group_name = module.securitygroup.name
   user                = "ubuntu"
-  key_name            = "eazytraining"
-  availability_zone   = "us-east-1a"
+  key_name            = "terraform-project"
+  availability_zone   = "us-east-1b"
   ami                 = data.aws_ami.ubuntu_ami.id
   instance_type       = var.instance_type
 }
@@ -34,7 +34,7 @@ module "eip" {
 module "ebs" {
   source   = "../modules/ebs"
   ebs_size = 10
-  ebs_zone = "us-east-1a"
+  ebs_zone = "us-east-1b"
   ebs_tags = {
     Name = "eazytraining_ebs"
   }
